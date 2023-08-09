@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="referrer" content="never">
+		<meta http-equiv="Access-Control-Allow-Origin" content="" />
+		<meta http-equiv="Access-Control-Allow-Credentials" content="" />
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.9.3/skins/default/aliplayer-min.css" />
+		<script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/de/prismplayer/2.9.3/aliplayer-min.js">
+		</script>
+		<script src="https://xiaomi0.oss-cn-huhehaote.aliyuncs.com/bfq/comf2d.js"></script>
+		<script>
+			!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"K3FKYn3vhzNOs2Te",ck:"K3FKYn3vhzNOs2Te"});
+			</script>
+
+		<style>
+			body,
+			html {
+				width: 100%;
+				height: 100%;
+				background: rgb(0, 0, 0);
+				padding: 0;
+				margin: 0;
+				overflow-x: hidden;
+				overflow-y: hidden
+			}
+
+			* {
+				margin: 0;
+				border: 0;
+				padding: 0;
+				text-decoration: none
+			}
+
+			#player-con {
+				position: inherit
+			}
+		</style>
+
+		<div class="floating-window">
+			<a id="myParagraph" href="xfurl">xfc</a>
+		</div>
+		<script>
+			var myParagraph = document.getElementById("myParagraph");
+			myParagraph.innerText = xfc;
+			myParagraph.href = xfurl;
+		</script>
+		<style>
+			.floating-window a:link,
+			.floating-window a:visited {
+				color: #ffffff;
+				text-decoration: none;
+			}
+
+			.floating-window {
+				position: fixed;
+				color: #ffffff;
+				font-size: 16px;
+				right: 70%;
+				bottom: 90%;
+				background-color: rgba(255, 255, 255, 0.0);
+				border: 0px solid #00aaff;
+				padding: 0px;
+				box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+				z-index: 9999;
+				animation: float 1s infinite;
+			}
+		</style>
+	
+	</head>
+	<body>
+		<div class="prism-player" id="player-con"></div>
+		<script type="text/javascript">
+			function GetQueryString(name) {
+				var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+				var r = window.location.search.substr(1).match(reg);
+				if (r != null) return decodeURI(r[2]);
+				return null;
+			}
+			var key = GetQueryString("key");
+			var key = key.replace(' ', '+');
+			var mp4 = atob(key);
+			document.title = 'alm';
+			var player = new Aliplayer({
+				"id": "player-con",
+				"source": mp4,
+				"width": "100%",
+				"height": "100%",
+				"autoplay": true,
+				"isLive": false,
+				"rePlay": false,
+				"playsinline": true,
+				"preload": true,
+				"controlBarVisibility": "always",
+				"useH5Prism": true,
+				"skinLayout": [{
+						"name": "bigPlayButton",
+						"align": "blabs",
+						"x": 30,
+						"y": 80
+					},
+					{
+						"name": "H5Loading",
+						"align": "cc"
+					},
+					{
+						"name": "errorDisplay",
+						"align": "tlabs",
+						"x": 0,
+						"y": 0
+					},
+					{
+						"name": "infoDisplay"
+					},
+					{
+						"name": "tooltip",
+						"align": "blabs",
+						"x": 0,
+						"y": 56
+					},
+					{
+						"name": "thumbnail"
+					},
+					{
+						"name": "controlBar",
+						"align": "blabs",
+						"x": 0,
+						"y": 0,
+						"children": [{
+								"name": "progress",
+								"align": "blabs",
+								"x": 0,
+								"y": 44
+							},
+							{
+								"name": "playButton",
+								"align": "tl",
+								"x": 15,
+								"y": 12
+							},
+							{
+								"name": "timeDisplay",
+								"align": "tl",
+								"x": 10,
+								"y": 7
+							},
+							{
+								"name": "fullScreenButton",
+								"align": "tr",
+								"x": 10,
+								"y": 12
+							},
+							{
+								"name": "volume",
+								"align": "tr",
+								"x": 5,
+								"y": 10
+							}
+						]
+					}
+				]
+			}, function(player) {
+				console.log("The player is created");
+			});
+
+			var showAlert = tckg;
+			player.on('timeupdate', function() {
+				if (player.getCurrentTime() >= player.getDuration() * tcsj && showAlert) {
+					showAlert = false;
+					var confirmed = false;
+					var result = window.confirm(tcwz);
+					if (result) {
+						window.location.href = tcurl;
+					}
+				}
+			});
+			player.on("ended", function() {
+				window.location.href = jwurl;
+			});
+		</script>
+		<script type="text/javascript">
+		</script>
+
+	</body>
+</html>
